@@ -1301,6 +1301,9 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### boolean HasTrinket ( [TrinketType](enums/TrinketType.md) Type, boolean IgnoreModifiers = false ) {: .copyable aria-label='Functions' }
 **IgnoreModifiers**: If set to true, only counts trinkets the player actually holds and ignores effects granted by other items
+
+???+ bug "Bug"
+    This function does not distinguish between golden or normal trinkets, it will return true for a golden trinket id, even if the player only has a normal one.
 ___
 ### Has·Weapon·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
